@@ -95,9 +95,9 @@ EOF
 # cat >> .config <<EOF
 # CONFIG_PACKAGE_kmod-usb-ohci=y
 # CONFIG_PACKAGE_kmod-usb-ohci-pci=y
-# CONFIG_PACKAGE_kmod-usb2=y
+CONFIG_PACKAGE_kmod-usb2=y
 # CONFIG_PACKAGE_kmod-usb2-pci=y
-# CONFIG_PACKAGE_kmod-usb3=y
+CONFIG_PACKAGE_kmod-usb3=y
 # EOF
 
 # 第三方插件选择:
@@ -146,7 +146,6 @@ cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-v2ray-server is not set #V2ray服务器
 # CONFIG_PACKAGE_luci-app-pptp-vpnserver-manyusers is not set #PPTP VPN 服务器
 # CONFIG_PACKAGE_luci-app-hd-idle is not set #磁盘休眠
-# CONFIG_PACKAGE_luci-app-unblockmusic is not set #解锁网易云灰色歌曲
 EOF
 
 # 常用LuCI插件(启用):
@@ -156,7 +155,7 @@ CONFIG_PACKAGE_luci-app-wrtbwmon=y #实时流量监测
 CONFIG_PACKAGE_luci-app-webadmin=y #Web管理页面设置
 CONFIG_PACKAGE_luci-app-filetransfer=y #系统-文件传输
 CONFIG_PACKAGE_luci-app-autoreboot=y #定时重启
-# CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
+CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
 CONFIG_PACKAGE_luci-app-frpc=y #Frp内网穿透
 CONFIG_PACKAGE_luci-app-upnp=y #通用即插即用UPnP(端口自动转发)
 CONFIG_PACKAGE_luci-app-softethervpn=y #SoftEtherVPN服务器
